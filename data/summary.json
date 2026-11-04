@@ -1,0 +1,40 @@
+{
+  "n_rows": 38901039,
+  "n_unique_addresses_approx": 6083422,
+  "n_tokens": 28,
+  "n_stablecoin_rows": 4326261,
+  "n_rows_with_exchange": 902266,
+  "block_min": 6525201,
+  "block_max": 10000000,
+  "n_exchanges": 296,
+  "n_exchange_types": {
+    "dex": 49,
+    "cex": 247
+  },
+  "n_counterparties": 172596,
+  "n_top_wallets": 2000,
+  "n_flow_rows": 6739,
+  "n_direct_rows": 107,
+  "n_shared_pairs": 1213,
+  "n_wallets_skipped_projection": 0,
+  "wallet_exchange_degree_hist": {
+    "1": 148053,
+    "2": 16948,
+    "3": 4166,
+    "4": 2236,
+    "5": 686,
+    "6": 276,
+    "7": 104,
+    "8": 57,
+    "9": 17,
+    "10": 20,
+    "11": 13,
+    "12": 6,
+    "13": 4,
+    "14": 3,
+    "15": 2,
+    "18": 3,
+    "25": 2
+  },
+  "n_usdc_sample": 300647
+}

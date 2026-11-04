@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Poster — Grafos en la red de transferencias Ethereum</title>
+<style>
+  :root{
+    --ink:#10231f;
+    --muted:#52645f;
+    --teal:#0b5d4b;
+    --teal2:#12836b;
+    --gold:#c9972c;
+    --red:#b23a48;
+    --blue:#2d5f9a;
+    --paper:#f7f5ef;
+    --line:#d8d2c4;
+  }
+  @page { size: A1 portrait; margin: 0; }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:#e9e4d8;
+    color:var(--ink);
+    font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .poster{
+    width:594mm;
+    min-height:841mm;
+    margin:0 auto;
+    padding:11mm 11mm 9mm 11mm;
+    background:
+      radial-gradient(circle at 8% 0%, rgba(18,131,107,.10), transparent 28%),
+      radial-gradient(circle at 92% 100%, rgba(201,151,44,.09), transparent 30%),
+      var(--paper);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows:min-content;
+    gap:7mm 8mm;
+  }
+  header{
+    grid-column:1 / -1;
+    border-bottom:2.2mm solid var(--teal);
+    padding-bottom:5mm;
+    display:grid;
+    grid-template-columns:1fr 42mm;
+    gap:8mm;
+    align-items:end;
+  }
+  .kicker{
+    display:inline-block;
+    background:var(--teal);
+    color:white;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    font-size:8.2pt;
+    padding:1.6mm 3mm;
+    border-radius:1.2mm;
+    margin-bottom:3mm;
+  }
+  h1{
+    margin:0 0 2.4mm 0;
+    font-size:26pt;
+    line-height:1.06;
+    letter-spacing:-.02em;
+  }
+  .subtitle{
+    margin:0;
+    color:var(--muted);
+    font-size:11.5pt;
+    line-height:1.35;
+    max-width:430mm;
+  }
+  .authors{
+    margin-top:3.5mm;
+    font-size:10.5pt;
+    line-height:1.45;
+  }
+  .authors strong{ color:var(--teal); }
+  .badge-no-dijkstra{
+    background:#fff;
+    border:1.2mm solid var(--red);
+    color:var(--red);
+    border-radius:3mm;
+    padding:3mm;
+    text-align:center;
+    font-weight:800;
+    font-size:10.5pt;
+    line-height:1.15;
+    transform:rotate(-2deg);
+  }
+  .badge-no-dijkstra small{
+    display:block;
+    font-weight:600;
+    color:var(--muted);
+    font-size:7.6pt;
+    margin-top:1.5mm;
+    letter-spacing:.04em;
+  }
+  .col{
+    display:flex;
+    flex-direction:column;
+    gap:6.5mm;
+  }
+  .card{
+    background:#fffdf8;
+    border:0.45mm solid var(--line);
+    border-radius:3mm;
+    padding:5mm 5.5mm;
+    box-shadow:0 1.2mm 3mm rgba(16,35,31,.06);
+    break-inside:avoid;
+  }
+  .card h2{
+    margin:0 0 2.4mm 0;
+    font-size:13.2pt;
+    color:var(--teal);
+    display:flex;
+    align-items:center;
+    gap:2.4mm;
+  }
+  .num{
+    display:inline-flex;
+    width:7mm; height:7mm;
+    align-items:center; justify-content:center;
+    border-radius:50%;
+    background:var(--teal);
+    color:white;
+    font-size:9pt;
+    flex:0 0 auto;
+  }
+  .card h3{
+    margin:3.2mm 0 1.2mm 0;
+    font-size:9.4pt;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:var(--muted);
+  }
+  p, li{ font-size:8.9pt; line-height:1.38; margin:0 0 2mm 0; }
+  ul{ margin:0 0 1mm 4.2mm; padding:0; }
+  li{ margin-bottom:1.2mm; }
+  .small{ font-size:7.8pt; color:var(--muted); }
+  .figure{
+    margin:2mm 0 1mm 0;
+    text-align:center;
+  }
+  .figure img{
+    width:100%;
+    max-height:78mm;
+    object-fit:contain;
+    border-radius:1.5mm;
+    border:0.3mm solid var(--line);
+    background:white;
+  }
+  .figure.tall img{ max-height:105mm; }
+  .figure.small img{ max-height:55mm; }
+  .caption{
+    font-size:7.2pt;
+    color:var(--muted);
+    line-height:1.3;
+    margin-top:1.4mm;
+    text-align:left;
+  }
+  .kpis{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2.4mm;
+    margin:2.5mm 0 1mm 0;
+  }
+  .kpi{
+    background:linear-gradient(180deg, rgba(18,131,107,.10), rgba(18,131,107,.03));
+    border:0.35mm solid rgba(18,131,107,.25);
+    border-radius:2mm;
+    padding:2.6mm 2mm;
+    text-align:center;
+  }
+  .kpi b{
+    display:block;
+    font-size:14.5pt;
+    color:var(--teal);
+    line-height:1.05;
+  }
+  .kpi span{
+    display:block;
+    font-size:6.9pt;
+    color:var(--muted);
+    line-height:1.2;
+    margin-top:1mm;
+  }
+  .callout{
+    border-left:1.5mm solid var(--gold);
+    background:rgba(201,151,44,.08);
+    padding:2.6mm 3mm;
+    border-radius:0 2mm 2mm 0;
+    margin:2.2mm 0 1mm 0;
+    font-size:8.4pt;
+    line-height:1.35;
+  }
+  .callout b{ color:#7a5a12; }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:7.7pt;
+    margin:1.8mm 0 1mm 0;
+  }
+  th, td{
+    border-bottom:0.3mm solid var(--line);
+    padding:1.5mm 1.2mm;
+    text-align:left;
+    vertical-align:top;
+  }
+  th{
+    color:var(--teal);
+    font-size:7.2pt;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+  }
+  .two-figs{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2.5mm;
+    align-items:end;
+  }
+  .two-figs .figure img{ max-height:52mm; }
+  .math{
+    font-family:"DejaVu Serif", Georgia, serif;
+    font-style:italic;
+    white-space:nowrap;
+  }
+  footer{
+    grid-column:1 / -1;
+    border-top:0.5mm solid var(--line);
+    padding-top:3mm;
+    display:grid;
+    grid-template-columns:1fr 34mm;
+    gap:6mm;
+    align-items:center;
+    color:var(--muted);
+    font-size:7.6pt;
+    line-height:1.35;
+  }
+  .qr{
+    width:32mm; height:32mm;
+    border:0.45mm dashed var(--muted);
+    border-radius:2mm;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:6.2pt;
+    color:var(--muted);
+    background:white;
+  }
+  .tag{
+    display:inline-block;
+    background:rgba(45,95,154,.10);
+    color:var(--blue);
+    border:0.3mm solid rgba(45,95,154,.25);
+    border-radius:5mm;
+    padding:1mm 2.4mm;
+    font-size:7pt;
+    font-weight:700;
+    margin:0 1mm 1.4mm 0;
+  }
+  @media screen and (max-width:800px){
+    .poster{ width:100%; min-height:auto; grid-template-columns:1fr; padding:6mm; }
+    header, footer{ grid-column:1; }
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <header>
+    <div>
+      <span class="kicker">Proyecto final · Teoría de Grafos · UIS</span>
+      <h1>La red de transferencias Ethereum:<br>fragmentación, poder y liquidez</h1>
+      <p class="subtitle">Cuatro lecturas algorítmicas de 38,9 millones de transferencias ERC-20 (2018–2020): conectividad, centralidad, comunidades y flujo máximo.</p>
+      <div class="authors">
+        <strong>Emerson Ballesteros Diaz</strong> · Tarea 1 &nbsp;|&nbsp;
+        <strong>Jhon Arciniegas</strong> · Tarea 2 &nbsp;|&nbsp;
+        <strong>Pablo Alvarez</strong> · Tarea 3 &nbsp;|&nbsp;
+        <strong>Todo el grupo</strong> · Tarea 4<br>
+        Universidad Industrial de Santander · Curso de Teoría de Grafos · 2026
+      </div>
+    </div>
+    <div class="badge-no-dijkstra">
+      SIN<br>Dijkstra
+      <small>Algoritmos propios<br>100 % implementados</small>
+    </div>
+  </header>
+
+  <!-- COLUMNA IZQUIERDA -->
+  <div class="col">
+
+    <section class="card">
+      <h2><span class="num">0</span> Dataset y preprocesamiento</h2>
+      <div class="kpis">
+        <div class="kpi"><b>38,9 M</b><span>transferencias ERC-20</span></div>
+        <div class="kpi"><b>28</b><span>tokens distintos</span></div>
+        <div class="kpi"><b>6,08 M</b><span>direcciones únicas</span></div>
+      </div>
+      <p>Eventos <span class="math">Transfer</span> de Ethereum entre los bloques 6.525.201 y 10.000.000 (oct. 2018 – may. 2020). Se usan USDC y DAI para normalizar valor a USD; se excluyen <span class="math">mint/burn</span> (<span class="math">0x000…</span>) y auto-loops.</p>
+      <div class="figure small">
+        <img src="figs/cell05_0.png" alt="Actividad mensual">
+        <div class="caption"><b>Fig. 1.</b> Actividad mensual y volumen stablecoin. El máximo se alcanza en feb. 2020 (≈ USD 9.490 M).</div>
+      </div>
+      <table>
+        <tr><th>Elemento</th><th>Valor</th></tr>
+        <tr><td>Transferencias stablecoin</td><td>4.326.261</td></tr>
+        <tr><td>Con exchange etiquetado</td><td>902.266</td></tr>
+        <tr><td>Volumen stablecoin total</td><td>USD 60.302 M</td></tr>
+        <tr><td>Volumen en grafo de exchanges</td><td>USD 16.347 M</td></tr>
+        <tr><td>Exchanges (CEX/DEX)</td><td>296 (247 / 49)</td></tr>
+      </table>
+      <p class="small">Datos compactos: <b>32 MB</b> en <span class="math">data/</span>, generados con <span class="math">preprocess.py</span> a partir del CSV original de 8,3 GB.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">1</span> Fragmentación y puntos críticos</h2>
+      <p><b>Problema real:</b> ¿qué direcciones pueden aislar la liquidez USDC si desaparecen? <b>Modelo:</b> grafo no dirigido <span class="math">G=(V,E)</span>, vértices = direcciones, aristas = transferencias. Componente conexa = islote de liquidez; punto de articulación = dirección cuyo fallo parte la red.</p>
+      <div class="figure">
+        <img src="figs/cell11_0.png" alt="Puntos de articulación">
+        <div class="caption"><b>Fig. 2.</b> Impacto de eliminar los principales puntos de articulación. Binance 1 separa 19.447 vértices de la componente gigante.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><b>36.618</b><span>componentes conexas</span></div>
+        <div class="kpi"><b>28.587</b><span>puntos de articulación</span></div>
+        <div class="kpi"><b>141.674</b><span>puentes</span></div>
+      </div>
+      <p>La componente gigante concentra <b>110.596 vértices (56,9 %)</b>. El resto son islotes: la red es global pero fuertemente fragmentada. <b>Algoritmos:</b> Union-Find + BFS para componentes; Tarjan iterativo para articulaciones y puentes. <b>Validación:</b> Tarjan vs. fuerza bruta en subgrafo BFS de 300 nodos (coincidencia exacta).</p>
+      <div class="callout"><b>Hallazgo:</b> los grandes exchanges no solo concentran volumen; son <b>cuellos de botella estructurales</b>. La caída de una billetera de exchange puede aislar a miles de contrapartes.</div>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">2</span> Importancia sistémica: PageRank</h2>
+      <p><b>Modelo:</b> grafo dirigido y ponderado por volumen USD; vértices = exchanges + 2.000 contrapartes. PageRank mide la probabilidad estacionaria de un paseo aleatorio con reinicio (<span class="math">d=0,85</span>).</p>
+      <div class="figure">
+        <img src="figs/cell16_1.png" alt="PageRank vs in-strength">
+        <div class="caption"><b>Fig. 3.</b> PageRank vs. volumen recibido. 1inch y OasisDEX tienen una posición topológica desproporcionada respecto a su volumen.</div>
+      </div>
+      <table>
+        <tr><th>#</th><th>Exchange</th><th>Tipo</th><th>PageRank</th></tr>
+        <tr><td>1</td><td>Binance 1</td><td>CEX</td><td>0,0904</td></tr>
+        <tr><td>2</td><td>1inch.exchange</td><td>DEX</td><td>0,0755</td></tr>
+        <tr><td>3</td><td>OasisDEX</td><td>DEX</td><td>0,0735</td></tr>
+        <tr><td>4</td><td>Binance 4</td><td>CEX</td><td>0,0132</td></tr>
+        <tr><td>5</td><td>Binance 2</td><td>CEX</td><td>0,0131</td></tr>
+      </table>
+      <p><b>Comparación:</b> PageRank ponderado vs. no ponderado (Spearman 0,679) y vs. in-strength (Spearman 0,839; solapamiento top-20 = 17/20). El volumen explica mucho, pero no todo: la topología importa.</p>
+    </section>
+
+  </div>
+
+  <!-- COLUMNA DERECHA -->
+  <div class="col">
+
+    <section class="card">
+      <h2><span class="num">3</span> Comunidades de liquidez: Louvain</h2>
+      <p><b>Modelo:</b> grafo no dirigido y ponderado por <b>frecuencia de transferencias</b> (no por volumen) para evitar que unas pocas ballenas dominen la partición. Louvain maximiza la modularidad <span class="math">Q</span> en dos fases: movimiento local + agregación, con 10 reinicios.</p>
+      <div class="figure tall">
+        <img src="figs/cell21_1.png" alt="Grafo de comunidades">
+        <div class="caption"><b>Fig. 4.</b> Grafo agregado de comunidades (grosor ∝ peso entre comunidades). La comunidad C01 es el ecosistema Binance; C02 gira en torno a 1inch; C03 a FTX; C04 a OasisDEX.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><b>13</b><span>comunidades Louvain</span></div>
+        <div class="kpi"><b>0,614</b><span>modularidad Q</span></div>
+        <div class="kpi"><b>24</b><span>comunidades LP</span></div>
+      </div>
+      <p><b>Comparación:</b> Label Propagation obtiene <span class="math">Q=0,605</span> con 24 comunidades (más fragmentadas); Louvain logra una partición más compacta y con mayor modularidad. La proyección exchange–exchange por billeteras compartidas confirma la fragmentación: solo <b>88 de 296</b> exchanges comparten contrapartes principales (6 comunidades, <span class="math">Q=0,149</span>).</p>
+      <div class="callout"><b>Lectura:</b> el mercado no es un grafo aleatorio; tiene una arquitectura <i>hub-and-spoke</i> alrededor de Binance y de agregadores DEX. Las rutas de arbitraje más eficientes pasan por pocos ecosistemas.</div>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">4</span> Capacidad y cuellos de botella: flujo máximo</h2>
+      <p><b>Modelo:</b> red dirigida con capacidades <span class="math">c(u,v)</span> = volumen USD agregado. Origen <b>Binance 1</b>, destino <b>FTX Exchange</b>. Por max-flow/min-cut, el flujo máximo es la capacidad del corte mínimo.</p>
+      <div class="figure">
+        <img src="figs/cell26_0.png" alt="Corte mínimo">
+        <div class="caption"><b>Fig. 5.</b> Top 10 aristas del corte mínimo Binance 1 → FTX. El cuello de botella son salidas hacia billeteras que absorben flujo sin retorno.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><b>USD 56,85 M</b><span>flujo máximo</span></div>
+        <div class="kpi"><b>168</b><span>aristas en el corte</span></div>
+        <div class="kpi"><b>7,6×</b><span>Dinic vs. Edmonds-Karp</span></div>
+      </div>
+      <p><b>Algoritmos:</b> Dinic (BFS de niveles + flujo bloqueante) y Edmonds-Karp (BFS de caminos de aumento). Ambos coinciden en <b>USD 56,85 M</b> y 216 aumentos; Dinic tarda ≈0,015 s vs. ≈0,114 s de EK. <b>Sensibilidad:</b> Binance 1 → Huobi 5 alcanza USD 89,4 M, lo que confirma que la capacidad depende del destino y de las rutas disponibles.</p>
+      <div class="callout"><b>Limitación:</b> capacidades acumuladas de 19 meses, no instantáneas. El resultado es una cota estructural, no una predicción de liquidez diaria.</div>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">5</span> Conclusiones</h2>
+      <ul>
+        <li><b>Fragmentación:</b> 36.618 componentes y 28.587 puntos de articulación; la componente gigante es solo el 56,9 % de los vértices.</li>
+        <li><b>Poder:</b> Binance 1 lidera, pero 1inch y OasisDEX son críticos por su posición topológica, no solo por volumen.</li>
+        <li><b>Comunidades:</b> 13 ecosistemas con <span class="math">Q≈0,614</span>; Louvain supera a Label Propagation en modularidad y compactación.</li>
+        <li><b>Liquidez:</b> el flujo máximo está limitado por contrapartes “sumidero”, no por una única arista entre exchanges.</li>
+        <li><b>Método:</b> DSU/BFS/Tarjan, PageRank, Louvain/LP y Dinic/EK fueron implementados desde cero y validados entre sí.</li>
+      </ul>
+      <h3>Trabajo futuro</h3>
+      <p>Incorporar la dimensión temporal (grafos mensuales), precios históricos para normalizar todos los tokens y capacidades instantáneas con restricciones de tiempo.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="num">6</span> Referencias y recursos</h2>
+      <p class="small">
+        Tarjan (1972) · Page et al. (1999) · Blondel et al. (2008) · Dinic (1970) · Edmonds &amp; Karp (1972) · Raghavan et al. (2007) · ERC-20 (Ethereum EIPs).<br>
+        Dataset: <span class="math">token_transfers_full.csv</span> + etiquetas de exchanges y pools stablecoin.<br>
+        Notebook: <span class="math">proyecto_grafos_ethereum.ipynb</span> · Preprocesamiento: <span class="math">preprocess.py</span> · Datos: <span class="math">data/</span>.
+      </p>
+      <div>
+        <span class="tag">Union-Find</span>
+        <span class="tag">Tarjan</span>
+        <span class="tag">PageRank</span>
+        <span class="tag">Louvain</span>
+        <span class="tag">Label Propagation</span>
+        <span class="tag">Dinic</span>
+        <span class="tag">Edmonds-Karp</span>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div>
+      <b>Universidad Industrial de Santander</b> · Teoría de Grafos · Proyecto final 2026.<br>
+      Entregables: notebook importable a Colab (70 %), video explicativo ≤ 9 min (15 %), poster sintético (15 %).<br>
+      <b>Restricción respetada:</b> no se utilizó el algoritmo de Dijkstra en ninguna tarea.
+    </div>
+    <div class="qr">
+      QR / enlace<br>video y notebook
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

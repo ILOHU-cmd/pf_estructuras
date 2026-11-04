@@ -1,0 +1,182 @@
+label,address,name,asset
+uniswap,0x97e7d56a0408570ba1a7852de36350f7713906ec,Uniswap V3,DAI-FRAX
+uniswap,0xfda299cbcce3c9e71633dcebf9e10e4aba2b1e4f,Uniswap V2,FACE-USDT
+uniswap,0xd6a309f49cf79542cea91df7b334eb4bd29aa0d7,Uniswap V3,USDC-STG
+uniswap,0x2b1a1b9d6a50d225c84d1ae3624d3396e0b245e8,Uniswap V3,DAI-BEAN
+uniswap,0x11181bd3baf5ce2a478e98361985d42625de35d1,Uniswap V2,ASTO-USDC
+uniswap,0x16975d5bec8c0a797922a77e3be988ce805e46b2,Uniswap V2,CLUK-USDC
+uniswap,0x8324be628543be4a8ee4448c1a269cad3da487f6,Uniswap V3,USDC-oneBTC 2
+uniswap,0x613944734e29e73d084673d1532bff8683ed9a5b,Uniswap V3,oneUNI-USDC
+uniswap,0x60b505862e717b37882471b6086e75eb10f7eca7,Uniswap V2,HOBA-USDC
+uniswap,0x4177d19e4125213bdd8d82dbc1ca775799d18218,Uniswap V2,SD-USDC
+uniswap,0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc,Uniswap LP,USDC/ETH
+uniswap,0x11b815efb8f581194ae79006d24e0d814b7697f6,Uniswap V3,USDT 3
+uniswap,0xed9cd0662628d99b6b10e8b8faf19bf9634e8af9,Uniswap V3,PRTN-USDT 
+uniswap,0x16b70f44719b227278a2dc1122e8106cc929ecd1,Uniswap V3,LUNA
+uniswap,0xe859041c9c6d70177f83de991b9d757e13cea26e,Uniswap V3,HDRN-USDC 
+uniswap,0xc5fbeee2488d1e8c31646015d34b6cc679d664b7,Uniswap V2,USDC-Tsukiyomi
+uniswap,0x5777d92f208679db4b9778590fa3cab3ac9e2168,Uniswap V3,DAI-USDC 4
+uniswap,0x7b28470032da06051f2e620531adbaeadb285408,Uniswap V2,MPL-USDC 
+uniswap,0x64640bc81c7445cd9a592fdf5955c4b52c6c9783,Uniswap V2,GOB-USDT
+uniswap,0x60a39010e4892b862d1bb6bdde908215ac5af6f3,Uniswap V2,LUNA 3
+uniswap,0x4d42fd2fe2eb1e4c7eec64272a1f715dce0ea535,Uniswap V2,USDC-Daruma
+uniswap,0x25c0edc51909fc20429c6ece9b8f4fbb5af13878,Uniswap V3,ASIC-USDC 
+uniswap,0xfad57d2039c21811c8f2b5d5b65308aa99d31559,Uniswap V3,LINK-USDC
+uniswap,0xe05e653453f733786f2dabae0ffa1e96cfcc4b25,Uniswap V3,HEX-USDC 3
+uniswap,0xeb4b2b5e0eae7a0eadd0673ef8c3c830f8762f28,Uniswap V2,REQ-USDC
+uniswap,0x5ad7452ceafdaeb0936507d5bb5890964ef56bd3,Uniswap V2,Okinami-USDC
+uniswap,0xfe0df74636bc25c7f2400f22fe7dae32d39443d2,Uniswap V3,RBN-USDC 2
+uniswap,0x38ff7fe3403a38a95d8da1706d6353225072f111,Uniswap V2,USDC-DODECA
+uniswap,0x67cea36eeb36ace126a3ca6e21405258130cf33c,Uniswap V2,USDC-TSUKA
+uniswap,0x0e183a9fec85c7c083c163a6f67ae8be3e140207,Uniswap V3,USDT-RBIS 
+uniswap,0x11a708ded0fe503bbbf43d2baf403120dc5e145c,Uniswap V2,USDC-SPIRAL
+uniswap,0xaae63df9a86f9a682507c922db38fae5e777a606,Uniswap V3,USDC-SWEAT
+uniswap,0x3ed96d54be53868edbc3ad5ccc4995710d187dc4,Uniswap V3,APE-USDT 2
+uniswap,0xc00dcc13a60be8addaf4a471489155cd433f223f,Uniswap V2,USDC-River 
+uniswap,0x7bea39867e4169dbe237d55c8242a8f2fcdcc387,Uniswap V3,USDC
+uniswap,0xdf388f1155e621e21764988289def81da92f3284,Uniswap V3,USDC-SWAP 
+uniswap,0x47e466a1640f9c0a36dffc6830954db4c4a414e1,Uniswap V3,USDC-SWAP
+uniswap,0xf6dcdce0ac3001b2f67f750bc64ea5beb37b5824,Uniswap V2,HEX-USDC
+uniswap,0xbd81af742f13b173a5705e89d0c8ca7caf65b1d1,Uniswap V2,SLAYER-USDC
+uniswap,0x459f8d1f5eac1de861163ff5fccf6f476e8f5ab6,Uniswap V3,LAIKA-USDC 2
+uniswap,0x69d91b94f0aaf8e8a2586909fa77a5c2c89818d5,Uniswap V3,HEX-USDC
+uniswap,0x44cd0ae117d6b7441e54d1b9ff256d432c9c76ba,Uniswap V2,Yama-USDC
+uniswap,0x8df8a06d256130675fe0276b90095608e2310062,Uniswap V2,DIE-USDC
+uniswap,0x8c54aa2a32a779e6f6fbea568ad85a19e0109c26,Uniswap V3,FEI-USDC 3
+uniswap,0xe2d2de6799e3456f241775a5400803f7c1045657,Uniswap V3,USDC-Daruma
+uniswap,0x8fda44515c77bdd6e3ec8d983a612a6da7c9bea7,Uniswap V2,WeRApes-USDC
+uniswap,0xb8cc2148074c8305f3b3405e0f3b2abc3c496771,Uniswap V2,BANKAI-USDC
+uniswap,0x9d4cc26ddbcc591449d94cd266a0dde78d69015a,Uniswap V2,S-USDC
+uniswap,0x015769601d8d4879c0e193eeab31f10cf03c9ea9,Uniswap V3,USDC-MLP
+uniswap,0x8b49033079065424a0a85e8fa83620a1fb6bd19e,Uniswap V3,DC-USDT
+uniswap,0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640,Uniswap V3,USDC 3
+uniswap,0x3155acd9f75915fcc21d34035f440da7040bd3ba,Uniswap V2,PROS-USDC
+uniswap,0x066375dc02ec5b1447b801ab5f5e9599dcb2a45e,Uniswap V3,USDC-LUNC
+dex,0xe592427a0aece92de3edee1f18e0157c05861564,Uniswap V3 Router,unknown
+uniswap,0x9a834b70c07c81a9fcd6f22e842bf002fbffbe4d,Uniswap V3,FRAX-USDC 3
+uniswap,0xbb6da27f31ef3b12639dd8e17eeaaf15e2e36e11,Uniswap V2,QMT-USDT
+uniswap,0x6591c4bcd6d7a1eb4e537da8b78676c1576ba244,Uniswap V2,BOND-USDC
+uniswap,0x9d96880952b4c80a55099b9c258250f2cc5813ec,Uniswap V3,USDC-UST 7 
+uniswap,0x216fb666dd61600e74f7b2ca25a38aa99db1a4e9,Uniswap V3,USDC-TSUKA
+dex,0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45,Uniswap V3 Router 2,unknown
+uniswap,0xe2c9cf1e2f63c6ce4971ff56472357fb890f44f9,Uniswap V2,BLOCKIFY-USDC
+uniswap,0x922b548e728a6ad4d6902cafc6a62e64d8fe6c02,Uniswap V2,UCHI-USDC
+uniswap,0x1e49768714e438e789047f48fd386686a5707db2,Uniswap V2,VOW-USDT
+uniswap,0x2d7c55b16bb3524d1787347b5846a5d6536a5764,Uniswap V2,UNKAI-USDC
+uniswap,0xe0554a476a092703abdb3ef35c80e0d76d32939f,Uniswap V3,USDC 4
+uniswap,0xa9c77fddf4fd3e4c262aa46e7f35be04aab3416d,Uniswap V2,BTC2.0-USDC
+uniswap,0x49eb1545e5e04a5d1591cf08068d306ad01bc524,Uniswap V3,USDC-WAIT
+uniswap,0x3041cbd36888becc7bbcbc0045e3b1f144466f5f,Uniswap V2,USDC-USDT
+uniswap,0xb0f4a77bde7fee134265307c5cc19abff0ba409b,Uniswap V3,CHZ-USDT
+uniswap,0x813b22032e94667cc0f854cc7241fc5a309c45bc,Uniswap V3,USDC-LOOKS 3
+uniswap,0x12d6867fa648d269835cf69b49f125147754b54d,Uniswap V3,USDC-UST 4
+uniswap,0xf6b6d608e8aad7a40597f280aa5206fceb0b9364,Uniswap V2,GST-USDC
+uniswap,0x18d96b617a3e5c42a2ada4bc5d1b48e223f17d0d,Uniswap V3,USDC-UST 5
+uniswap,0x7858e59e0c01ea06df3af3d20ac7b0003275d4bf,Uniswap V3,USDC-USDT
+uniswap,0x8c305fa55eb8711d4cbe4be5e76e100cca7f3c97,Uniswap V2,WeR1-USDC
+uniswap,0x9db9e0e53058c89e5b94e29621a205198648425b,Uniswap V3,WBTC-USDT
+uniswap,0x7210e71c96e002ecc784f4be6f0cb5ce35e49b2d,Uniswap V3,USDC-LUNA
+uniswap,0x71eaa3f86a541177f64a15c5f5479aedcc426860,Uniswap V3,FORTH-USDT
+uniswap,0xc6f6bbb40155d1d2e6becffa0e7eaad5ce2f16b4,Uniswap V2,XEN-USDC
+uniswap,0xade01e6151f08e79d64677b0510c44b33776edb3,Uniswap V2,Takmor-USDC 
+uniswap,0xc4df26eee0cf4dfea037d6db96c38ba536bf84d4,Uniswap V2,USDC-RTK 
+uniswap,0x2b9f8fe8ffc437a9008bb3097066f02b0a1c52ec,Uniswap V2,REQ-USDT 
+uniswap,0xec54859519293b8784bc5bf28144166f313618af,Uniswap V2,DAI-O 
+uniswap,0xd3ff34fe9692c563bafcb58c9a085c8c89c2f180,Uniswap V2,FLy-USDT 
+uniswap,0x4e68ccd3e89f51c3074ca5072bbac773960dfa36,Uniswap V3,USDT
+uniswap,0x5abb85101e197a14f5cb6400431f12b9662ea67c,Uniswap V3 ,INU-USDT 
+uniswap,0xf1d2172d6c6051960a289e0d7dca9e16b65bfc64,Uniswap V3,LUNC-USDT 
+uniswap,0x5e008a2897a0c99e8e30e381c5fc99054722de30,Uniswap V3,BONE-USDC 
+uniswap,0x298b7c5e0770d151e4c5cf6cca4dae3a3ffc8e27,Uniswap V3,MIM-USDC 
+uniswap,0x7d179563990b316d981f8d57ff9005f075b2f467,Uniswap V2,THE-USDC 
+uniswap,0x141df9a608856d1651c9a3c27b39960ff0418a12,Uniswap V3,TAMA-USDT 2 
+uniswap,0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8,Uniswap V3,USDC 2 
+uniswap,0x841bb1966c1d1b80634111691471c667e4c2bfe4,Uniswap V2,HDRN-USDC 
+uniswap,0x1673888242bad06cc87a7bcaff392cb27218b3e3,Uniswap V3,FORT-USDC 
+uniswap,0xdf50fbde8180c8785842c8e316ebe06f542d3443,Uniswap V3,FEI-USDC 4 
+uniswap,0xa87b2ff0759f5b82c7ec86444a70f25c6bffccbf,Uniswap V3,USDC-UST 3
+uniswap,0x99ac8ca7087fa4a2a1fb6357269965a2014abc35,Uniswap V3,WBTC-USDC
+uniswap,0xfee8f24bdb6935d2fb9061cf26b98b271aaf9479,Uniswap V2,FWT-USDC
+uniswap,0xae461ca67b15dc8dc81ce7615e0320da1a9ab8d5,Uniswap V2,DAI-USDC 
+uniswap,0x710e8355d849c8469a3ff1b587f4d9a2ac314949,Uniswap V3,ALUC-USDC
+uniswap,0xa40bb1c47f6dd27142a2bd7c93bfa98db9d1f5c5,Uniswap V2,MASK-USDC 
+uniswap,0x1f91969bce00d7bd2939fbb9cdaf96d9b50fac61,Uniswap V3,MASK-USDC
+uniswap,0x6b14b204a1e108eed241c34bd6c801003450e2ac,Uniswap V2,USDC-Takoto 
+uniswap,0xd3ca35355106cb8bc5fd7c534275509673319d83,Uniswap V3,XMON-USDC 
+uniswap,0x60594a405d53811d3bc4766596efd80fd545a270,Uniswap V3,DAI 2 
+uniswap,0x4bb0925fa50da9b4c8936869433b48e78ccc5c13,Uniswap V2,AGIX-USDT 
+uniswap,0xf2fb6ac14c231b67d9abd86345e64611671c2eaf,Uniswap V2,SHIBEREUM-USDC 3 
+uniswap,0x38d93fc12dba4ed96d5b3d3b2d02464732cf5d7f,Uniswap V2,RYO-USDC 2
+uniswap,0x7a809081f991ecfe0ab2727c7e90d2ad7c2e411e,Uniswap V2,USDC-CAW
+uniswap,0x0bdf5421bf6b7462e700be45eabe047b68a7030b,Uniswap V2,FAITH-USDC
+uniswap,0x7b0db5d2b7720e9a48cffe0362d0a8535a86a763,Uniswap V2,UNDEAD-USDT 
+uniswap,0x327cbcb91a54d981bf51b531a0c07b62616bc3d1,Uniswap V3,MAXI-USDC 2 
+uniswap,0x4c3c16527f66e887241154e96f6bacabb3128abb,Uniswap V2,OTHR-USDC 
+uniswap,0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852,Uniswap V2,USDT 
+uniswap,0xa478c2975ab1ea89e8196811f51a7b7ade33eb11,Uniswap V2,DAI 
+uniswap,0x1971f78a7636632101e06931e0856be2f9bcec02,Uniswap V3,USDC-BDAMM 
+uniswap,0x353bb62ed786cdf7624bd4049859182f3c1e9e5d,Uniswap V3,XEN-USDC 
+uniswap,0x66f8256267b062c0b33c80a05f37eb4856a545e6,Uniswap V3,USDC-HOP 
+uniswap,0x5e35c4eba72470ee1177dcb14dddf4d9e6d915f4,Uniswap V3,BUSD-USDC 2 
+uniswap,0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8,Uniswap V3,DAI 
+uniswap,0x3328ca5b535d537f88715b305375c591cf52d541,Uniswap V3,PLSD-USDC 
+uniswap,0x98f90bfc702ec548d21b5a566a4df6853e2890d4,Uniswap V2,AKRO-USDC 
+uniswap,0xa71a1ee7c7bec7d128026b3ebf0fe7fdc5f1f787,Uniswap V2,YORI-USDC 
+uniswap,0x78cf6b1345b6d44d484b446bd0170c1d8986c687,Uniswap V2,USDC-$WIND 
+uniswap,0x8c1c499b1796d7f3c2521ac37186b52de024e58c,Uniswap V2,RAD-USDC 
+uniswap,0x9a772018fbd77fcd2d25657e5c547baff3fd7d16,Uniswap V3,WBTC-USDC 2 
+uniswap,0x59d8e2fd24b56a31eb6ac4b5ba749d120a7d1480,Uniswap V3,USDC-UST 8 
+uniswap,0x735a26a57a0a0069dfabd41595a970faf5e1ee8b,Uniswap V3,agEUR-USDC 2 
+uniswap,0xe081eeab0adde30588ba8d5b3f6ae5284790f54a,Uniswap V3,USDC-FOLD 
+uniswap,0x2e932bdc32be2810d7c45deb89110b3bdd625f41,Uniswap V2,USDC-WTF 2 
+uniswap,0x90fed78f6856a7ddacc052db17ad22c941aa42fe,Uniswap V3,LAIKA-USDC 
+uniswap,0xc63b0708e2f7e69cb8a1df0e1389a98c35a76d52,Uniswap V3,FRAX-USDC 
+uniswap,0x3416cf6c708da44db2624d63ea0aaef7113527c6,Uniswap V3,USDC-USDT 4 
+uniswap,0x32235087dcb7394bddba81048143034c03f2175c,Uniswap V3,THE-USDC 
+uniswap,0xb07fe2f407f971125d4eb1977f8acee8846c7324,Uniswap V3,APE-USDC 2 
+sushiswap,0x8b00ee8606cc70c2dce68dea0cefe632cca0fb7b,SushiSwap,UST
+sushiswap,0x1e888882d0f291dd88c5605108c72d414f29d460,SushiSwap,USDC-QUARTZ
+sushiswap,0xc3d03e4f041fd4cd388c549ee2a29a9e5075882f,SushiSwap,DAI
+sushiswap,0x055475920a8c93cffb64d039a8205f7acc7722d3,SushiSwap,OHM-DAI 3
+sushiswap,0x31fa985bb0c282a814e7f3f0dce88b2a44197f60,SushiSwap,MASK-USDC
+sushiswap,0x397ff1542f962076d0bfe58ea045ffa2d347aca0,SushiSwap,USDC
+sushiswap,0xb27c7b131cf4915bec6c4bc1ce2f33f9ee434b9f,SushiSwap,APE-USDT
+sushiswap,0x06da0fd433c1a5d7a4faa01111c044910a184553,SushiSwap,USDT
+sushiswap,0x88172e5d79fe75c7aed1453e89ff5d741cfa4ca7,SushiSwap,LUNA
+sushiswap,0x05104ebba2b6d3b8254aa41cf6df80462f6160ae,SushiSwap,SYN-USDC
+mevbot,0xd8c07491caa1edf960db3ceff387426d53942ea0,MEV Bot,unknown
+mevbot,0x5e767aa6204ece873c7d9405c4bca49cd3e0bf39,MEV Bot,unknown
+mevbot,0x00000000008c4fb1c916e0c88fd4cc402d935e7d,MEV Bot,unknown
+mevbot,0xbadc0defafcf6d4239bdf0b66da4d7bd36fcf05a,MEV Bot,unknown
+mevbot,0x80d4230c0a68fc59cb264329d3a717fcaa472a13,MEV Bot,unknown
+mevbot,0x00000000c2cf7648c169b25ef1c217864bfa38cc,MEV Bot,unknown
+mevbot,0x57c1e0c2adf6eecdb135bcf9ec5f23b319be2c94,MEV Bot,unknown
+mevbot,0xbeefbabeea323f07c59926295205d3b7a17e8638,MEV Bot,unknown
+mevbot,0x8aff5ca996f77487a4f04f1ce905bf3d27455580,MEV Bot,unknown
+mevbot,0x8e60b2b96ea901beb2cafd79b8d0ed249a5efd95,MEV Bot,unknown
+mevbot,0x0000000000007f150bd6f54c40a34d7c3d5e9f56,MEV Bot,unknown
+mevbot,0x98c3d3183c4b8a650614ad179a1a98be0a8d6b8e,MEV Bot,unknown
+mevbot,0xe8c060f8052e07423f71d445277c61ac5138a2e5,MEV Bot,unknown
+mevbot,0xeef86c2e49e11345f1a693675df9a38f7d880c8f,MEV Bot,unknown
+mevbot,0x45716d9eddbc332df1d42b9f540fbebed671b20f,MEV Bot,unknown
+mevbot,0x0eae044f00b0af300500f090ea00027097d03000,MEV Bot,unknown
+mevbot,0x0000000099cb7fc48a935bceb9f05bbae54e8987,MEV Bot,unknown
+mevbot,0x00000000003b3cc22af3ae1eac0440bcee416b40,MEV Bot,unknown
+mevbot,0x07197a25bf7297c2c41dd09a79160d05b6232bcf,MEV Bot,unknown
+mevbot,0x000000000dfde7deaf24138722987c9a6991e2d4,MEV Bot,unknown
+0xprotocol,0xe66b31678d6c16e9ebf358268a790b763c133750,Coinbase Wallet Proxy,unknown
+unknown,0xdef171fe48cf0115b1d80b88dc8eab59176fee57,Paraswap v5: Augustus Swapper Mainnet,unknown
+curve.fi,0x890f4e345b1daed0367a877a1612f86a1f86985f,Curve.fi: UST MetaPool,unknown
+curve.fi,0xa5407eae9ba41422680e2e00537571bcc53efbfd,Curve.fi: sUSD v2 Swap,unknown
+curve.fi,0xd51a44d3fae010294c616388b506acda1bfaae46,Curve.fi: USDT/WBTC/WETH Pool,unknown
+dex,0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7,Curve.fi: DAI/USDC/USDT Pool,unknown
+0xprotocol,0xdef1c0ded9bec7f1a1670819833240f027b25eff,Exchange Proxy ,unknown
+0xprotocol,0x22f9dcf4647084d6c31b2765f6910cd85c178c18,Exchange Proxy Flash Wallet,unknown
+cowprotocol,0x9008d19f58aabd9ed0d60971565aa8510560ab41,CoW Protocol: GPv2Settlement,unknown
+unknown,0x0000006daea1723962647b7e189d311d757fb793,Wintermute 1,unknown
+balancer,0xba12222222228d8ba445958a75a0704d566bf2c8,Balancer: Vault ,unknown
+1inch,0x288931fa76d7b0482f0fd0bca9a50bf0d22b9fef,1inch: Aggregation Executor 2 ,unknown
+1inch,0xf2f400c138f9fb900576263af0bc7fcde2b1b8a8,1inch: Aggregation Executor 1,unknown
+1inch,0x220bda5c8994804ac96ebe4df184d25e5c2196d4,1inch: Aggregation Executor,unknown
+dex,0x1111111254fb6c44bac0bed2854e76f90643097d,1inch v4: Aggregation Router,unknown
+dex,0xd8b19613723215ef8cc80fc35a1428f8e8826940,Rubic Exchange,unknown

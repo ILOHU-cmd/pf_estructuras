@@ -1,0 +1,19 @@
+# Dataset original completo (8,3 GB): no subir al repositorio
+ethereum-exchanges/token_transfers_full.csv
+
+# Paquetes generados que duplican data/
+data.zip
+entrega_proyecto.zip
+
+# Entornos y cachés
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Salidas temporales
+*.log
+
+# Guía de estudio local (no se comparte en el repositorio)
+Guia_codigo_y_defensa.pdf
