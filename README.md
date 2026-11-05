@@ -14,7 +14,7 @@
 |---|---:|---|
 | Notebook importable a Google Colab | 70 % | `proyecto_grafos_ethereum.ipynb` |
 | Video explicativo (≤ 9 min) | 15 % | enlace de YouTube + guion en `video_guion.md` |
-| Poster sintético | 15 % | `poster/poster.html` (exportable a PDF) |
+| Poster sintético | 15 % | Entrega aparte (no incluido en el repositorio) |
 
 > **Restricción respetada:** el algoritmo de Dijkstra no se utiliza en ninguna tarea del proyecto. Todas las implementaciones algorítmicas fueron desarrolladas desde cero en el notebook.
 
@@ -115,11 +115,6 @@ proyecto_final/
 ├── proyecto_grafos_ethereum.ipynb   # entregable principal (70 %)
 ├── preprocess.py                    # generación de datos compactos
 ├── data/                            # datos compactos (~32 MB)
-├── poster/
-│   ├── poster.html                  # poster sintético (A1, imprimible)
-│   ├── poster.pdf                   # versión PDF A1 generada con ReportLab
-│   ├── make_poster_pdf.py           # generador del PDF
-│   └── figs/                        # figuras usadas en el poster
 ├── video_guion.md                   # guion del video (≤ 9 min)
 ├── guia/                            # fuente Markdown y generador de la guía
 ├── requirements.txt
@@ -157,9 +152,9 @@ Validaciones incluidas:
 
 ---
 
-## 7. Video y poster
+## 7. Video y póster
 
 - **Video:** `video_guion.md` contiene un guion de ≤ 9 minutos con tiempos, responsables y qué mostrar en pantalla.
-- **Poster:** abre `poster/poster.html` en un navegador y usa `Imprimir → Guardar como PDF` con tamaño A1 vertical. También se incluye `poster/poster.pdf` (A1) generado con `poster/make_poster_pdf.py`. Las figuras están en `poster/figs/`.
+- **Póster:** se entrega por separado y **no se incluye en este repositorio**.
 
-Antes de entregar, añade el enlace de YouTube en este README y en el notebook, y verifica que el PDF del póster sea la versión final.
+Antes de entregar, añade el enlace de YouTube en este README y en el notebook, y entrega el PDF del póster por separado.

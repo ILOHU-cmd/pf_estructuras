@@ -38,7 +38,7 @@ El notebook `proyecto_grafos_ethereum.ipynb` tiene 33 celdas: 16 de texto y 17 d
 | `preprocess.py` | Genera los datos compactos desde el CSV de 8,3 GB | “Recorre el archivo una sola vez en streaming; el notebook no necesita el CSV original.” |
 | `data/` | 32 MB de datos derivados | “Resumen, flujos agregados, muestra USDC y etiquetas.” |
 | `README.md` | Instrucciones y checklist | “Cómo ejecutar y qué contiene cada entregable.” |
-| `poster/poster.pdf` | Póster sintético (15 %) | “Resume problema, modelo, algoritmo y resultado de cada tarea.” |
+| Póster sintético (15 %) | Entrega aparte, no incluido en el repositorio | “Resume problema, modelo, algoritmo y resultado de cada tarea.” |
 | `video_guion.md` | Guion del video (15 %) | “Guion cronometrado de 8 a 9 minutos.” |
 | `entrega_proyecto.zip` | Paquete de entrega | “Todo excepto el CSV original.” |
 
