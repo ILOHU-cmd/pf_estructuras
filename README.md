@@ -13,7 +13,7 @@
 | Entregable | Peso | Archivo |
 |---|---:|---|
 | Notebook importable a Google Colab | 70 % | `proyecto_grafos_ethereum.ipynb` |
-| Video explicativo (≤ 9 min) | 15 % | enlace de YouTube + guion en `video_guion.md` |
+| Video explicativo (≤ 9 min) | 15 % | Entrega aparte (no incluido en el repositorio) |
 | Poster sintético | 15 % | Entrega aparte (no incluido en el repositorio) |
 
 > **Restricción respetada:** el algoritmo de Dijkstra no se utiliza en ninguna tarea del proyecto. Todas las implementaciones algorítmicas fueron desarrolladas desde cero en el notebook.
@@ -115,11 +115,9 @@ proyecto_final/
 ├── proyecto_grafos_ethereum.ipynb   # entregable principal (70 %)
 ├── preprocess.py                    # generación de datos compactos
 ├── data/                            # datos compactos (~32 MB)
-├── video_guion.md                   # guion del video (≤ 9 min)
-├── guia/                            # fuente Markdown y generador de la guía
 ├── requirements.txt
 ├── README.md
-└── ethereum-exchanges/              # dataset original (8,3 GB; no subir a Colab)
+└── ethereum-exchanges/              # etiquetas del dataset original
 ```
 
 ---
@@ -152,9 +150,9 @@ Validaciones incluidas:
 
 ---
 
-## 7. Video y póster
+## 7. Entregables externos
 
-- **Video:** `video_guion.md` contiene un guion de ≤ 9 minutos con tiempos, responsables y qué mostrar en pantalla.
+- **Video:** se entrega por separado y **no se incluye en este repositorio**.
 - **Póster:** se entrega por separado y **no se incluye en este repositorio**.
 
-Antes de entregar, añade el enlace de YouTube en este README y en el notebook, y entrega el PDF del póster por separado.
+El notebook, los datos compactos, el preprocesamiento y la documentación son los únicos archivos del repositorio.
