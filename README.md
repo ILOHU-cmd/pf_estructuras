@@ -16,7 +16,7 @@
 | Video explicativo (≤ 9 min) | 15 % | enlace de YouTube + guion en `video_guion.md` |
 | Poster sintético | 15 % | `poster/poster.html` (exportable a PDF) |
 
-> **Restricción:** no se usa el algoritmo de Dijkstra en ninguna parte del proyecto. Todos los algoritmos fueron implementados desde cero en el notebook.
+> **Restricción respetada:** el algoritmo de Dijkstra no se utiliza en ninguna tarea del proyecto. Todas las implementaciones algorítmicas fueron desarrolladas desde cero en el notebook.
 
 ---
 
